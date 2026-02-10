@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lamination Weight Calculator</title>
+
+  <!-- ===== CSS LINK ===== -->
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="app-header">
+  <h1>Lamination Weight Calculator</h1>
+  <p>Internal Core Calculation Tool</p>
+</header>
+
+<!-- ================= MAIN GRID ================= -->
+<main class="app-grid">
+
+  <!-- ---------- ORDER INPUT TABLE ---------- -->
+  <section class="card input-panel">
+    <h2>Order Input</h2>
+
+    <table class="item-table">
+      <thead>
+        <tr>
+          <th>Material</th>
+          <th>kVAR</th>
+          <th>Detuning</th>
+          <th>Quantity</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody id="itemBody">
+        <!-- rows created by JS -->
+      </tbody>
+    </table>
+
+    <button class="primary-btn" onclick="addItem()">+ Add Item</button>
+  </section>
+
+  <!-- ---------- LAMINATION SUMMARY ---------- -->
+<table class="summary-table">
+  <thead>
+    <tr>
+      <th colspan="2">YOKE</th>
+      <th colspan="2">LIMB</th>
+    </tr>
+    <tr>
+      <th>Size (mm)</th>
+      <th>Stack (mm)</th>
+      <th>Size (mm)</th>
+      <th>Stack (mm)</th>
+    </tr>
+  </thead>
+
+  <tbody id="summaryBody">
+    <!-- Filled by JS -->
+  </tbody>
+</table>
+
+  </section>
+
+</main>
+
+<!-- ===== JS LINK (MUST BE HERE) ===== -->
+<script src="script1.js"></script>
+
+</body>
+</html>
